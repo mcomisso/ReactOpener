@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07ACCD1D013D1D8A7C45F91EC2EDCDD7 /* NMSFTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C7D382AA49096DEAEF9FD03AECA0356 /* NMSFTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C6983F12316C98116A7EB2AC1B2861F /* NMSSHLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 365E561A1D7C76EDBB6084367D651B19 /* NMSSHLogger.m */; };
+		15A5E26F7840AEF6030294B027A9C703 /* NMSSHChannelDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F48606B44EFEF9E820F8C489C39382A4 /* NMSSHChannelDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15D81E69F8E53A8E7884074612EAF667 /* libssh2_publickey.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242337E62F17604B672DF9AB351B8FD /* libssh2_publickey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		182328D3AF4F9023A0F7A1C2223C3CD1 /* NMSFTPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3466F6784D44CA9B89EC2BBB7BA5EBC2 /* NMSFTPFile.m */; };
+		23DE1D89ACB558DEBB2BA85399283C4D /* NMSSHHostConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B409A51731111422806722D6B972570 /* NMSSHHostConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		248A91EE30DFFBD40212E8C0FB0FFC88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C074C11AE6A5B57D6F593C07D4511E4 /* Foundation.framework */; };
+		2731B1E090F41726246A95CEAD3288FD /* Pods-ReactOpener-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59798ACC2B4C28E0F484B1931BA78167 /* Pods-ReactOpener-dummy.m */; };
+		30C3384CB864DFC3610AD102068FC46E /* NMSSHSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AE115E2C142308CF30047EEC85B4DD8C /* NMSSHSession.m */; };
+		334943303897246F11C26C793138CEF9 /* libssh2.h in Headers */ = {isa = PBXBuildFile; fileRef = 58F0F7D9392B43F1B7C8BCBF44B97AB0 /* libssh2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41E9760D4A43A3A7F2BB62EBDE061914 /* Pods-ReactOpenerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7E10F5748F7EA765AF5666459CB99F /* Pods-ReactOpenerTests-dummy.m */; };
+		4BE2B0D693BFD4C6B9ED25389E120DA3 /* NMSSHHostConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A6DDABAB7C980BECEF33B38F37D6C0 /* NMSSHHostConfig.m */; };
+		5CECC734C5E8F58E4DE509B819F7F50B /* NMSSHConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 232DDC6949C77ED5C4113C20CF6975B1 /* NMSSHConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E890C764021E5841025B1E200109F1D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA5794656CD6EAD5432F6E93991FC63 /* CFNetwork.framework */; };
+		5FCB5781335C1057876CC30EE1704338 /* NMSSHLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DAEF375C922B55B5825BB5F6B5D00DA5 /* NMSSHLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7212571123FEF177AC67E5E4AB454D76 /* NMSSHChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FA1C39EB80F6605793D6E8DD404B7C6 /* NMSSHChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7313AEB8F1D48F2118E36AB4480A9C61 /* NMSSHChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EB91D20D0F3101513AE15092E82DD /* NMSSHChannel.m */; };
+		79284F1428745D341DF2975AEA78B071 /* NMSSHSession.h in Headers */ = {isa = PBXBuildFile; fileRef = F9B504FF04D44520C7E16E1EF1855BA4 /* NMSSHSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EAA2F9058B73C41099151AB520EA291 /* NMSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = 6259B7B47B3BE94C4E86E15E66724CD3 /* NMSSH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D9944E071607A8DCD7DBE246F384C4A /* NMSSHSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C41830233921EA5BB476D0107F24D4E /* NMSSHSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AB918BC21E193B6B19E34E35DD203B6 /* libssh2_sftp.h in Headers */ = {isa = PBXBuildFile; fileRef = C4915730E3178393E07C8E0BB4B6BECF /* libssh2_sftp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC75B2E41F79561F56D7EC280175FE24 /* NMSFTPFile.h in Headers */ = {isa = PBXBuildFile; fileRef = C802138CB85448F1E1483BACF790D44D /* NMSFTPFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFF76A5C1CBFCE26E5FF3A76E8A5991F /* NMSSHConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C93064F4D73007599DC6EB091ED0888 /* NMSSHConfig.m */; };
+		C530DDAAE1643ABBCD0843BEB2867BF0 /* NMSSH+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B80033E1FA67CAD619685055571F2EF /* NMSSH+Protected.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CC6D7AAFC80086B6207DA05E945643B5 /* NMSFTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A7E2421526536D352D9B9D04E39B92 /* NMSFTP.m */; };
+		D48759808B0AD03B433D8F5054AD42DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C074C11AE6A5B57D6F593C07D4511E4 /* Foundation.framework */; };
+		E9CDFA324DD9D6C735C128E07462006E /* socket_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = A4BABD54FB693648C56FEC9D86A7E7AF /* socket_helper.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		ECD7753168D883F19C32010DF3276F79 /* NMSSH-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 975A2B00A57D840D64175794D54C6B58 /* NMSSH-dummy.m */; };
+		F104C91F71991C6406CF7E1836426DC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C074C11AE6A5B57D6F593C07D4511E4 /* Foundation.framework */; };
+		F9934C111DE3B7FDEFF4F6060DE99BB6 /* NMSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B6CE22815945333CDB25D42B165D8BF /* NMSSH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE392F960D27295DCFCABB8DB5CFB348 /* socket_helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A92416D9E6CB035504873FCE0AB797 /* socket_helper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7F9320928205170225213A4EEE17763 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB327C3812CA5E2A070D8BCE740246BD;
+			remoteInfo = NMSSH;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0242337E62F17604B672DF9AB351B8FD /* libssh2_publickey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_publickey.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_publickey.h"; sourceTree = "<group>"; };
+		0B80033E1FA67CAD619685055571F2EF /* NMSSH+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NMSSH+Protected.h"; path = "NMSSH/Config/NMSSH+Protected.h"; sourceTree = "<group>"; };
+		0DF1E3D3522DEED6750B2E702621991E /* NMSSH.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMSSH.xcconfig; sourceTree = "<group>"; };
+		129157733C15C56E2590C8AB9513F862 /* libPods-ReactOpenerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ReactOpenerTests.a"; path = "libPods-ReactOpenerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17518D02B8BC674A892A31A3B5D60417 /* Pods-ReactOpener-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactOpener-frameworks.sh"; sourceTree = "<group>"; };
+		1F1EB91D20D0F3101513AE15092E82DD /* NMSSHChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHChannel.m; path = NMSSH/NMSSHChannel.m; sourceTree = "<group>"; };
+		232DDC6949C77ED5C4113C20CF6975B1 /* NMSSHConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHConfig.h; path = NMSSH/NMSSHConfig.h; sourceTree = "<group>"; };
+		2AB24F8C2A7A056B22F10606A980156C /* Pods-ReactOpenerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactOpenerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3466F6784D44CA9B89EC2BBB7BA5EBC2 /* NMSFTPFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSFTPFile.m; path = NMSSH/NMSFTPFile.m; sourceTree = "<group>"; };
+		365E561A1D7C76EDBB6084367D651B19 /* NMSSHLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHLogger.m; path = NMSSH/Config/NMSSHLogger.m; sourceTree = "<group>"; };
+		55A5C428BA57E47BDEFF86B067E30348 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "NMSSH-iOS/Libraries/lib/libssl.a"; sourceTree = "<group>"; };
+		58F0F7D9392B43F1B7C8BCBF44B97AB0 /* libssh2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2.h"; sourceTree = "<group>"; };
+		59798ACC2B4C28E0F484B1931BA78167 /* Pods-ReactOpener-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactOpener-dummy.m"; sourceTree = "<group>"; };
+		5A1BCF9FE311EDD584C9DACB3431AC8B /* Pods-ReactOpener-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactOpener-acknowledgements.plist"; sourceTree = "<group>"; };
+		5C074C11AE6A5B57D6F593C07D4511E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5C41830233921EA5BB476D0107F24D4E /* NMSSHSessionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSessionDelegate.h; path = NMSSH/Protocols/NMSSHSessionDelegate.h; sourceTree = "<group>"; };
+		5D7E10F5748F7EA765AF5666459CB99F /* Pods-ReactOpenerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactOpenerTests-dummy.m"; sourceTree = "<group>"; };
+		5FA1C39EB80F6605793D6E8DD404B7C6 /* NMSSHChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannel.h; path = NMSSH/NMSSHChannel.h; sourceTree = "<group>"; };
+		6259B7B47B3BE94C4E86E15E66724CD3 /* NMSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSH.h; path = NMSSH/NMSSH.h; sourceTree = "<group>"; };
+		6432531F0226413ADE2AB82404B477E3 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "NMSSH-iOS/Libraries/lib/libcrypto.a"; sourceTree = "<group>"; };
+		64855D0CAE03404E671C2C80703E2B36 /* Pods-ReactOpenerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactOpenerTests-resources.sh"; sourceTree = "<group>"; };
+		66A92416D9E6CB035504873FCE0AB797 /* socket_helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = socket_helper.m; path = NMSSH/Config/socket_helper.m; sourceTree = "<group>"; };
+		6C7D382AA49096DEAEF9FD03AECA0356 /* NMSFTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSFTP.h; path = NMSSH/NMSFTP.h; sourceTree = "<group>"; };
+		7299CFC35EAB02A55DDDC5FB9310AB85 /* Pods-ReactOpener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactOpener.release.xcconfig"; sourceTree = "<group>"; };
+		773C2CC0E60FE79EBE5765E3FF352E79 /* Pods-ReactOpener-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReactOpener-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7B409A51731111422806722D6B972570 /* NMSSHHostConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHHostConfig.h; path = NMSSH/NMSSHHostConfig.h; sourceTree = "<group>"; };
+		7B6CE22815945333CDB25D42B165D8BF /* NMSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSH.h; path = "NMSSH-iOS/NMSSH.h"; sourceTree = "<group>"; };
+		7C93064F4D73007599DC6EB091ED0888 /* NMSSHConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHConfig.m; path = NMSSH/NMSSHConfig.m; sourceTree = "<group>"; };
+		8993B4B1683F7686C6443A1B44F5E50B /* Pods-ReactOpenerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactOpenerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		927A4696F7BBBFEF23D339F2A47488CE /* Pods-ReactOpenerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactOpenerTests-frameworks.sh"; sourceTree = "<group>"; };
+		936F2E927D5E639CE50CAF043AC23BC1 /* libPods-ReactOpener.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ReactOpener.a"; path = "libPods-ReactOpener.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		975A2B00A57D840D64175794D54C6B58 /* NMSSH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NMSSH-dummy.m"; sourceTree = "<group>"; };
+		A4BABD54FB693648C56FEC9D86A7E7AF /* socket_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket_helper.h; path = NMSSH/Config/socket_helper.h; sourceTree = "<group>"; };
+		AE115E2C142308CF30047EEC85B4DD8C /* NMSSHSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHSession.m; path = NMSSH/NMSSHSession.m; sourceTree = "<group>"; };
+		B9A6DDABAB7C980BECEF33B38F37D6C0 /* NMSSHHostConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHHostConfig.m; path = NMSSH/NMSSHHostConfig.m; sourceTree = "<group>"; };
+		BC4D1D28AA0FB86C3961D477641A030C /* libNMSSH.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libNMSSH.a; path = libNMSSH.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4915730E3178393E07C8E0BB4B6BECF /* libssh2_sftp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_sftp.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_sftp.h"; sourceTree = "<group>"; };
+		C802138CB85448F1E1483BACF790D44D /* NMSFTPFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSFTPFile.h; path = NMSSH/NMSFTPFile.h; sourceTree = "<group>"; };
+		DAEF375C922B55B5825BB5F6B5D00DA5 /* NMSSHLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHLogger.h; path = NMSSH/Config/NMSSHLogger.h; sourceTree = "<group>"; };
+		DBA5794656CD6EAD5432F6E93991FC63 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		DE6DF1338C1147E5143ABE0A1CB44386 /* libssh2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssh2.a; path = "NMSSH-iOS/Libraries/lib/libssh2.a"; sourceTree = "<group>"; };
+		E3973C68A04961E230595C121DE40221 /* Pods-ReactOpener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactOpener.debug.xcconfig"; sourceTree = "<group>"; };
+		E3A7E2421526536D352D9B9D04E39B92 /* NMSFTP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSFTP.m; path = NMSSH/NMSFTP.m; sourceTree = "<group>"; };
+		EEEC62CD58A4E920F51E6FA055336CB1 /* Pods-ReactOpener-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactOpener-resources.sh"; sourceTree = "<group>"; };
+		F48606B44EFEF9E820F8C489C39382A4 /* NMSSHChannelDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannelDelegate.h; path = NMSSH/Protocols/NMSSHChannelDelegate.h; sourceTree = "<group>"; };
+		F7FF6406317A8D326942A242ED2E4911 /* Pods-ReactOpenerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReactOpenerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F9B504FF04D44520C7E16E1EF1855BA4 /* NMSSHSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSession.h; path = NMSSH/NMSSHSession.h; sourceTree = "<group>"; };
+		FF4BB440B25CE7D15D7421548DE300A7 /* NMSSH-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMSSH-prefix.pch"; sourceTree = "<group>"; };
+		FF5DAFFE707987B93471175C822F8454 /* Pods-ReactOpenerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactOpenerTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		866E0FD0A84554D56B6296386F8E7FA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E890C764021E5841025B1E200109F1D /* CFNetwork.framework in Frameworks */,
+				248A91EE30DFFBD40212E8C0FB0FFC88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42C379CC992B8625D4A14588AA3FDAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48759808B0AD03B433D8F5054AD42DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A9E397E69D24CBEE3796F28D2C5729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F104C91F71991C6406CF7E1836426DC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07B963F066CF1C907024B787F3D5186F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DBA5794656CD6EAD5432F6E93991FC63 /* CFNetwork.framework */,
+				5C074C11AE6A5B57D6F593C07D4511E4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		147DF127A6A49845D8C41FDED2A4F0FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				954EC35659646B3CA739016B8FADEE81 /* NMSSH */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1D42F775819B466B8CF3C09DBEC42E19 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D84A46BBBFE9656EC72F4054E550E1C /* Pods-ReactOpener */,
+				7FC24B898E1B3BFA35D0FD14336E106F /* Pods-ReactOpenerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07B963F066CF1C907024B787F3D5186F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54E516662B5B611940EC0713850F166A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DF1E3D3522DEED6750B2E702621991E /* NMSSH.xcconfig */,
+				975A2B00A57D840D64175794D54C6B58 /* NMSSH-dummy.m */,
+				FF4BB440B25CE7D15D7421548DE300A7 /* NMSSH-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NMSSH";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				147DF127A6A49845D8C41FDED2A4F0FF /* Pods */,
+				D1BEBF0E93EC42038CE2968774E9AF6D /* Products */,
+				1D42F775819B466B8CF3C09DBEC42E19 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7FC24B898E1B3BFA35D0FD14336E106F /* Pods-ReactOpenerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7FF6406317A8D326942A242ED2E4911 /* Pods-ReactOpenerTests-acknowledgements.markdown */,
+				8993B4B1683F7686C6443A1B44F5E50B /* Pods-ReactOpenerTests-acknowledgements.plist */,
+				5D7E10F5748F7EA765AF5666459CB99F /* Pods-ReactOpenerTests-dummy.m */,
+				927A4696F7BBBFEF23D339F2A47488CE /* Pods-ReactOpenerTests-frameworks.sh */,
+				64855D0CAE03404E671C2C80703E2B36 /* Pods-ReactOpenerTests-resources.sh */,
+				2AB24F8C2A7A056B22F10606A980156C /* Pods-ReactOpenerTests.debug.xcconfig */,
+				FF5DAFFE707987B93471175C822F8454 /* Pods-ReactOpenerTests.release.xcconfig */,
+			);
+			name = "Pods-ReactOpenerTests";
+			path = "Target Support Files/Pods-ReactOpenerTests";
+			sourceTree = "<group>";
+		};
+		82D056370A8729A491A86FD1E6806442 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6432531F0226413ADE2AB82404B477E3 /* libcrypto.a */,
+				DE6DF1338C1147E5143ABE0A1CB44386 /* libssh2.a */,
+				55A5C428BA57E47BDEFF86B067E30348 /* libssl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		954EC35659646B3CA739016B8FADEE81 /* NMSSH */ = {
+			isa = PBXGroup;
+			children = (
+				58F0F7D9392B43F1B7C8BCBF44B97AB0 /* libssh2.h */,
+				0242337E62F17604B672DF9AB351B8FD /* libssh2_publickey.h */,
+				C4915730E3178393E07C8E0BB4B6BECF /* libssh2_sftp.h */,
+				6C7D382AA49096DEAEF9FD03AECA0356 /* NMSFTP.h */,
+				E3A7E2421526536D352D9B9D04E39B92 /* NMSFTP.m */,
+				C802138CB85448F1E1483BACF790D44D /* NMSFTPFile.h */,
+				3466F6784D44CA9B89EC2BBB7BA5EBC2 /* NMSFTPFile.m */,
+				7B6CE22815945333CDB25D42B165D8BF /* NMSSH.h */,
+				6259B7B47B3BE94C4E86E15E66724CD3 /* NMSSH.h */,
+				0B80033E1FA67CAD619685055571F2EF /* NMSSH+Protected.h */,
+				5FA1C39EB80F6605793D6E8DD404B7C6 /* NMSSHChannel.h */,
+				1F1EB91D20D0F3101513AE15092E82DD /* NMSSHChannel.m */,
+				F48606B44EFEF9E820F8C489C39382A4 /* NMSSHChannelDelegate.h */,
+				232DDC6949C77ED5C4113C20CF6975B1 /* NMSSHConfig.h */,
+				7C93064F4D73007599DC6EB091ED0888 /* NMSSHConfig.m */,
+				7B409A51731111422806722D6B972570 /* NMSSHHostConfig.h */,
+				B9A6DDABAB7C980BECEF33B38F37D6C0 /* NMSSHHostConfig.m */,
+				DAEF375C922B55B5825BB5F6B5D00DA5 /* NMSSHLogger.h */,
+				365E561A1D7C76EDBB6084367D651B19 /* NMSSHLogger.m */,
+				F9B504FF04D44520C7E16E1EF1855BA4 /* NMSSHSession.h */,
+				AE115E2C142308CF30047EEC85B4DD8C /* NMSSHSession.m */,
+				5C41830233921EA5BB476D0107F24D4E /* NMSSHSessionDelegate.h */,
+				A4BABD54FB693648C56FEC9D86A7E7AF /* socket_helper.h */,
+				66A92416D9E6CB035504873FCE0AB797 /* socket_helper.m */,
+				82D056370A8729A491A86FD1E6806442 /* Frameworks */,
+				54E516662B5B611940EC0713850F166A /* Support Files */,
+			);
+			name = NMSSH;
+			path = NMSSH;
+			sourceTree = "<group>";
+		};
+		9D84A46BBBFE9656EC72F4054E550E1C /* Pods-ReactOpener */ = {
+			isa = PBXGroup;
+			children = (
+				773C2CC0E60FE79EBE5765E3FF352E79 /* Pods-ReactOpener-acknowledgements.markdown */,
+				5A1BCF9FE311EDD584C9DACB3431AC8B /* Pods-ReactOpener-acknowledgements.plist */,
+				59798ACC2B4C28E0F484B1931BA78167 /* Pods-ReactOpener-dummy.m */,
+				17518D02B8BC674A892A31A3B5D60417 /* Pods-ReactOpener-frameworks.sh */,
+				EEEC62CD58A4E920F51E6FA055336CB1 /* Pods-ReactOpener-resources.sh */,
+				E3973C68A04961E230595C121DE40221 /* Pods-ReactOpener.debug.xcconfig */,
+				7299CFC35EAB02A55DDDC5FB9310AB85 /* Pods-ReactOpener.release.xcconfig */,
+			);
+			name = "Pods-ReactOpener";
+			path = "Target Support Files/Pods-ReactOpener";
+			sourceTree = "<group>";
+		};
+		D1BEBF0E93EC42038CE2968774E9AF6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC4D1D28AA0FB86C3961D477641A030C /* libNMSSH.a */,
+				936F2E927D5E639CE50CAF043AC23BC1 /* libPods-ReactOpener.a */,
+				129157733C15C56E2590C8AB9513F862 /* libPods-ReactOpenerTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E5DE9A9746D4190F6DA8E7EC5ED2B8E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				334943303897246F11C26C793138CEF9 /* libssh2.h in Headers */,
+				15D81E69F8E53A8E7884074612EAF667 /* libssh2_publickey.h in Headers */,
+				9AB918BC21E193B6B19E34E35DD203B6 /* libssh2_sftp.h in Headers */,
+				07ACCD1D013D1D8A7C45F91EC2EDCDD7 /* NMSFTP.h in Headers */,
+				BC75B2E41F79561F56D7EC280175FE24 /* NMSFTPFile.h in Headers */,
+				C530DDAAE1643ABBCD0843BEB2867BF0 /* NMSSH+Protected.h in Headers */,
+				F9934C111DE3B7FDEFF4F6060DE99BB6 /* NMSSH.h in Headers */,
+				7EAA2F9058B73C41099151AB520EA291 /* NMSSH.h in Headers */,
+				7212571123FEF177AC67E5E4AB454D76 /* NMSSHChannel.h in Headers */,
+				15A5E26F7840AEF6030294B027A9C703 /* NMSSHChannelDelegate.h in Headers */,
+				5CECC734C5E8F58E4DE509B819F7F50B /* NMSSHConfig.h in Headers */,
+				23DE1D89ACB558DEBB2BA85399283C4D /* NMSSHHostConfig.h in Headers */,
+				5FCB5781335C1057876CC30EE1704338 /* NMSSHLogger.h in Headers */,
+				79284F1428745D341DF2975AEA78B071 /* NMSSHSession.h in Headers */,
+				8D9944E071607A8DCD7DBE246F384C4A /* NMSSHSessionDelegate.h in Headers */,
+				E9CDFA324DD9D6C735C128E07462006E /* socket_helper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		37D55CD7D12CA87C99DEF65B6E077A04 /* Pods-ReactOpener */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8A86A3B09F6C5FE1E33797CB1B99BB /* Build configuration list for PBXNativeTarget "Pods-ReactOpener" */;
+			buildPhases = (
+				4AD94EEA38C5D0848539B9F6BD377DF7 /* Sources */,
+				B42C379CC992B8625D4A14588AA3FDAD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B007B762A781CD21CDE6B6FB01086647 /* PBXTargetDependency */,
+			);
+			name = "Pods-ReactOpener";
+			productName = "Pods-ReactOpener";
+			productReference = 936F2E927D5E639CE50CAF043AC23BC1 /* libPods-ReactOpener.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CABC867D6D21FB26AFE75492AD87896F /* Pods-ReactOpenerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF1A28FD160F7B70EAF2D4702DC81867 /* Build configuration list for PBXNativeTarget "Pods-ReactOpenerTests" */;
+			buildPhases = (
+				A390127F833B16AE47C8A01BE2DBD42F /* Sources */,
+				E6A9E397E69D24CBEE3796F28D2C5729 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ReactOpenerTests";
+			productName = "Pods-ReactOpenerTests";
+			productReference = 129157733C15C56E2590C8AB9513F862 /* libPods-ReactOpenerTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CB327C3812CA5E2A070D8BCE740246BD /* NMSSH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9F34CDA9218938EC8890E99AB36460 /* Build configuration list for PBXNativeTarget "NMSSH" */;
+			buildPhases = (
+				292BCA6CD87972694993703A955C1C77 /* Sources */,
+				866E0FD0A84554D56B6296386F8E7FA9 /* Frameworks */,
+				E5DE9A9746D4190F6DA8E7EC5ED2B8E6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NMSSH;
+			productName = NMSSH;
+			productReference = BC4D1D28AA0FB86C3961D477641A030C /* libNMSSH.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D1BEBF0E93EC42038CE2968774E9AF6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB327C3812CA5E2A070D8BCE740246BD /* NMSSH */,
+				37D55CD7D12CA87C99DEF65B6E077A04 /* Pods-ReactOpener */,
+				CABC867D6D21FB26AFE75492AD87896F /* Pods-ReactOpenerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		292BCA6CD87972694993703A955C1C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6D7AAFC80086B6207DA05E945643B5 /* NMSFTP.m in Sources */,
+				182328D3AF4F9023A0F7A1C2223C3CD1 /* NMSFTPFile.m in Sources */,
+				ECD7753168D883F19C32010DF3276F79 /* NMSSH-dummy.m in Sources */,
+				7313AEB8F1D48F2118E36AB4480A9C61 /* NMSSHChannel.m in Sources */,
+				BFF76A5C1CBFCE26E5FF3A76E8A5991F /* NMSSHConfig.m in Sources */,
+				4BE2B0D693BFD4C6B9ED25389E120DA3 /* NMSSHHostConfig.m in Sources */,
+				0C6983F12316C98116A7EB2AC1B2861F /* NMSSHLogger.m in Sources */,
+				30C3384CB864DFC3610AD102068FC46E /* NMSSHSession.m in Sources */,
+				FE392F960D27295DCFCABB8DB5CFB348 /* socket_helper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD94EEA38C5D0848539B9F6BD377DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2731B1E090F41726246A95CEAD3288FD /* Pods-ReactOpener-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A390127F833B16AE47C8A01BE2DBD42F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E9760D4A43A3A7F2BB62EBDE061914 /* Pods-ReactOpenerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B007B762A781CD21CDE6B6FB01086647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NMSSH;
+			target = CB327C3812CA5E2A070D8BCE740246BD /* NMSSH */;
+			targetProxy = B7F9320928205170225213A4EEE17763 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46520081E784B7FE3A7302D5472450C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3973C68A04961E230595C121DE40221 /* Pods-ReactOpener.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		59BE51AC90CF171636C477A25502AF08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB24F8C2A7A056B22F10606A980156C /* Pods-ReactOpenerTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A3BFF2C284A9170967B040F77C1AB9A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF1E3D3522DEED6750B2E702621991E /* NMSSH.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NMSSH/NMSSH-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C2C53164B678A80A61B4B6B0E1102ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7299CFC35EAB02A55DDDC5FB9310AB85 /* Pods-ReactOpener.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D18A8B3C53A62EEDDF2EB5A5623B07A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF1E3D3522DEED6750B2E702621991E /* NMSSH.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NMSSH/NMSSH-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EBD96B7CA2FE179EF046817347407E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF5DAFFE707987B93471175C822F8454 /* Pods-ReactOpenerTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9F34CDA9218938EC8890E99AB36460 /* Build configuration list for PBXNativeTarget "NMSSH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3BFF2C284A9170967B040F77C1AB9A4 /* Debug */,
+				D18A8B3C53A62EEDDF2EB5A5623B07A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF1A28FD160F7B70EAF2D4702DC81867 /* Build configuration list for PBXNativeTarget "Pods-ReactOpenerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59BE51AC90CF171636C477A25502AF08 /* Debug */,
+				EBD96B7CA2FE179EF046817347407E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8A86A3B09F6C5FE1E33797CB1B99BB /* Build configuration list for PBXNativeTarget "Pods-ReactOpener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46520081E784B7FE3A7302D5472450C6 /* Debug */,
+				C2C53164B678A80A61B4B6B0E1102ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
